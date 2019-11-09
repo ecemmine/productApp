@@ -25,10 +25,9 @@ class ProductViewController: BaseViewController {
     //Observe loading and show startLoading if it is true, stop loading if it is false.
         viewModel.loading.bind { [weak self] (loading) in
            if loading{
-                self?.startLoading()
+             self?.startLoading()
            }else{
              self?.stopLoading()
-             self?.prepareCollectionView()
         }
       }
     }
